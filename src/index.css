@@ -1,0 +1,30 @@
+@import "tailwindcss";
+body{
+    background-color: black;
+}
+
+@keyframes colorChange {
+  0% {
+    background-position: left;
+  }
+
+  100% {
+    background-position: right;
+  }
+}
+
+.gradient-border {
+  background: linear-gradient(
+    90deg,
+    #ff0080,
+    #ff0000,
+    #ff8c00,
+    #ffd700,
+    #00ff88,
+    #00e5ff,
+    #ff0080
+  );
+
+  background-size: 300%;
+  animation: colorChange 5s linear infinite;
+}
